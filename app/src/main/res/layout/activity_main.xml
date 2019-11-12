@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름을 입력하세요."
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="메시지를 입력하세요."
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fbutton:buttonColor="@color/colorAccent"
+        fbutton:cornerRadius="5dp"
+        android:text="hello"
+        fbutton:shadowColor="@color/colorPrimary"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C3EEE5"
+        android:onClick="clickBtn"
+        android:text=" 이미지를 넣으세요. " />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:onClick="clickUpload"
+        android:text="데이터를 업로드합니다." />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:onClick="clickLoad"
+        android:text="데이터를 로드합니다." />
+
+
+</LinearLayout>
